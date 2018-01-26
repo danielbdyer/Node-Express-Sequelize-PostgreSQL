@@ -1,0 +1,57 @@
+<html>
+<head>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<h1>Shopping Lists</h1>
+<div id="parentcontainer">
+
+{{#shoppinglists}}
+<div class="store" id="{{{id}}}">
+  <div class="storename">{{storename}}</div>
+  <div class="storedetails">
+    {{street}}<br>{{city}},&nbsp;{{state}}&nbsp;{{zip}}
+  </div>
+  <div class="itemsheader">Items:</div>
+  <div class="storeitems">
+    <ul>
+      {{#groceryitems}}
+      <div class="groceryitem"> <li> {{itemname}} {{price}}</li></div>
+      {{/groceryitems}}
+      <div class="newitem">
+        <form action="/groceryitems/{{{id}}}" method="POST">
+          <input type="text" name="itemname" placeholder="Item Name"></input>
+          <div class="address2">
+          <input type="text" name="quantity" placeholder="Quantity"></input>
+          <input type="text" name="price" placeholder="Price"></input>
+        </div>
+          <input type="submit"></input>
+        </form>
+    </ul>
+  </div>
+</div>
+{{/shoppinglists}}
+
+<div class="newstore">
+  <form action="/shoppinglists" method="POST">
+    <input type="text" name="storename" placeholder="Store Name"></input><br>
+    <div class="address1">
+      <input type="text" name="street" placeholder="Street Address"></input>
+    </div>
+    <div class="address2">
+      <input type="text" name="city" placeholder="City"></input>
+      <input type="text" name="state" placeholder="State"></input>
+      <input type="text" name="zip" placeholder="ZIP"></input><br>
+    </div>
+  <div class="submit">
+    <input type="submit"></input>
+  </div>
+</form>
+</div>
+
+</div>
+</body>
+
+</html>
