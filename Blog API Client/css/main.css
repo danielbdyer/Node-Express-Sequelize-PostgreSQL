@@ -1,0 +1,94 @@
+div {
+  border: 0.5px solid gray; }
+
+#parent-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  display: block;
+  position: relative;
+  height: 80px;
+  width: 50%;
+  border: 3px solid gray;
+  margin-top: 70px; }
+
+#titlenav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+#title {
+  font-family: "Delius Unicase", cursive;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  letter-spacing: 6px;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+#navbar {
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+#authorimage {
+  position: absolute;
+  right: -10px;
+  top: -27px;
+  height: 150px;
+  width: 150px;
+  border-radius: 175px;
+  border: 3px solid lightgray;
+  background-image: url("../me.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+#body {
+  margin-top: 50px;
+  width: 65%; }
+
+input {
+  display: block;
+  width: 70%;
+  padding-bottom: 10px; }
+
+#newpostbody {
+  height: 150px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <style>@import url('https://fonts.googleapis.com/css?family=Delius+Unicase');</style>
+  <title>Daniel Dyer's Blog</title>
+  <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+   -->
+</head>
+<body>
+<div id="parent-container">
+
+  <div id="header">
+    <div id="titlenav">
+      <div id="title">danieldyer</div>
+      <div id="navbar">
+        <button type="button" class="btn btn-outline-success">new</button>
+        <button type="button" class="btn btn-secondary">recent</button>
+        <button type="button" class="btn btn-secondary">random</button>
+        <button type="button" class="btn btn-secondary">tags</button>
+      </div>
+    </div>
+    <div id="authorimage"></div>
+  </div>
+  <div id="body">
+
+    <div id="create">
+      <form id="newpost" action=""method="post">
+        <fieldset>
+          <input type="text" class="text-input" id="newtitle" value="" placeholder="Title your entry"/>
+          <input type="text" class="text-input" id="newpostbody" value="" placeholder="Write something!"/>
+          <input type="text" class="text-input" id="newimgURL" value="" placeholder="Submit a picture URL for your post."/>
+          <button id="btnSave">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <div id="post-container"></div>
+  </div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
